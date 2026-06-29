@@ -1,5 +1,5 @@
 'use client'
-import Image from 'next/image';
+
 import { useEffect, useRef, useState } from 'react'
 
 const stats = [
@@ -82,7 +82,8 @@ export default function About() {
         </div>
 
         <div className="about__img-wrapper">
-           <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+           <img
             src="/img/Profile.jpg"
             alt="Johnny Fanilonantenaïna"
             className="about__img"

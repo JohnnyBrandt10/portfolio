@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import Image from 'next/image';
 
 export default function Hero() {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -151,12 +150,12 @@ export default function Hero() {
 
         <div className="home__img-wrapper">
           <div className="home__img-card" ref={cardRef}>
-            <Image
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
               src="/img/Profile.jpg"
               alt="Johnny Fanilonantenaïna"
               width={500}
               height={500}
-              priority
               className="home__img"
             />
           </div>
