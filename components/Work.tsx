@@ -48,7 +48,8 @@ const projects = [
 export default function Work() {
   useEffect(() => {
     const loadSwiper = async () => {
-      const Swiper = (await import('swiper/bundle')).default;
+      const { default: Swiper } = await import('swiper/bundle');
+      await import('swiper/css/bundle');
 
       new Swiper('.work-swiper', {
         slidesPerView: 1,

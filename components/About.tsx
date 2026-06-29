@@ -83,7 +83,7 @@ export default function About() {
 
         <div className="about__img-wrapper">
            <Image
-            src="/img/profile.jpg"
+            src="/img/Profile.jpg"
             alt="Johnny Fanilonantenaïna"
             className="about__img"
             width={400}
