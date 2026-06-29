@@ -47,29 +47,29 @@ const projects = [
 
 export default function Work() {
   useEffect(() => {
-    const loadSwiper = async () => {
-      const { default: Swiper } = await import('swiper/bundle');
+  const loadSwiper = async () => {
+    const { default: Swiper } = await import('swiper/bundle')
 
-      setTimeout(() => {
-        new Swiper('.work-swiper', {
-          slidesPerView: 1,
-          spaceBetween: 24,
-          grabCursor: true,
-          loop: true,
-          pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-          },
-          breakpoints: {
-            640: { slidesPerView: 2 },
-            1024: { slidesPerView: 3 }
-          }
-        });
-      }, 500);
-    };
+    setTimeout(() => {
+      new Swiper('.work-swiper', {
+        slidesPerView: 1,
+        spaceBetween: 24,
+        grabCursor: true,
+        loop: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        breakpoints: {
+          640: { slidesPerView: 2 },
+          1024: { slidesPerView: 2 },
+        },
+      })
+    }, 500)
+  }
 
-    loadSwiper();
-  }, []);
+  loadSwiper()
+}, [])
 
   return (
     <section className="work section" id="work">
