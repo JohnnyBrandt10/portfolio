@@ -49,22 +49,23 @@ export default function Work() {
   useEffect(() => {
     const loadSwiper = async () => {
       const { default: Swiper } = await import('swiper/bundle');
-      await import('swiper/css/bundle');
 
-      new Swiper('.work-swiper', {
-        slidesPerView: 1,
-        spaceBetween: 24,
-        grabCursor: true,
-        loop: true,
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true
-        },
-        breakpoints: {
-          640: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 }
-        }
-      });
+      setTimeout(() => {
+        new Swiper('.work-swiper', {
+          slidesPerView: 1,
+          spaceBetween: 24,
+          grabCursor: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          breakpoints: {
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+          }
+        });
+      }, 500);
     };
 
     loadSwiper();
