@@ -1,5 +1,4 @@
 'use client';
-import Image from 'next/image';
 import { useEffect } from 'react';
 
 const projects = [
@@ -82,11 +81,9 @@ export default function Work() {
               <div className="swiper-slide" key={project.number}>
                 <div className="work__card">
                   <div className="work__img-wrapper">
-                    <Image
+                    <img
                       src={project.image}
                       alt={project.title}
-                      fill
-                      style={{ objectFit: 'cover' }}
                       className="work__img"
                     />
                     {project.private ? (
