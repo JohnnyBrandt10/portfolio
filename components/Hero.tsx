@@ -15,10 +15,10 @@ export default function Hero() {
 
       typedInstance = new Typed('#typed-text', {
         strings: [
-          'Developer.',
-          'React Dev.',
-          'Node.js Dev.',
-          'Next.js Dev.',
+          'Développeur.',
+          'Dev React.',
+          'Dev Node.js.',
+          'Dev Next.js.',
           'Problem Solver.'
         ],
         typeSpeed: 80,
@@ -92,36 +92,32 @@ export default function Hero() {
       <div className="home__container container grid">
         <div className="home__data">
           <p className="home__subtitle">
-            Hi! I&apos;m Johnny — Based in Antananarivo 🇲🇬
+            Bonjour ! Je suis Johnny — Basé à Antananarivo 🇲🇬
           </p>
-
           <h1 className="home__title">
-            Fullstack <br />
+            Développeur <br />
             <span id="typed-text"></span>
           </h1>
-
           <p className="home__description">
             Je construis des applications web complètes, du frontend au backend,
             avec des technologies modernes.
           </p>
-
           <div className="home__buttons">
             <a href="#work" className="button">
-              View my work
+              Voir mes projets
             </a>
-
             <a
               href="/img/CV-de-Johnny.pdf"
               className="button button--ghost"
               download
             >
-              Download CV <i className="ri-download-line"></i>
+              Télécharger CV <i className="ri-download-line"></i>
             </a>
           </div>
 
           <div className="home__socials">
             <a
-              title='github'
+              title="github"
               href="https://github.com/JohnnyBrandt10"
               target="_blank"
               rel="noopener noreferrer"
@@ -131,7 +127,7 @@ export default function Hero() {
             </a>
 
             <a
-              title='linkedin'
+              title="linkedin"
               href="mailto:johnnybrandt10@gmail.com"
               className="home__social-link"
             >
@@ -139,7 +135,7 @@ export default function Hero() {
             </a>
 
             <a
-              title='phone'
+              title="phone"
               href="tel:+261347474172"
               className="home__social-link"
             >
@@ -170,9 +166,9 @@ export default function Hero() {
               </defs>
 
               <text className="home__rotate-label">
-                <textPath href="#circle-path">
-                  Let&apos;s work together • Explore more •
-                </textPath>
+               <textPath href="#circle-path">
+  Travaillons ensemble • En savoir plus •{' '}
+</textPath>
               </text>
             </svg>
 
@@ -184,7 +180,7 @@ export default function Hero() {
       </div>
 
       <div className="blob-big blob-big--hero"></div>
-<div className="blob-small blob-small--hero"></div>
+      <div className="blob-small blob-small--hero"></div>
     </section>
   );
 }

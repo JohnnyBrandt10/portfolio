@@ -41,7 +41,7 @@ export default function Skills() {
   return (
     <section className="skills section" id="skills">
       <h2 className="section__title">
-        My <span>Skills</span>
+        Mes <span>Compétences</span>
       </h2>
       <p className="skills__subtitle">
         Technologies que je maîtrise et utilise au quotidien.

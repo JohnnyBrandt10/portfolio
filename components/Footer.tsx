@@ -1,10 +1,10 @@
 const footerLinks = [
-  { href: '#home', label: 'Home' },
-  { href: '#about', label: 'About' },
-  { href: '#work', label: 'Projects' },
+  { href: '#home', label: 'Accueil' },
+  { href: '#about', label: 'À propos' },
+  { href: '#work', label: 'Projets' },
   { href: '#services', label: 'Services' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#experience', label: 'Experience' },
+  { href: '#skills', label: 'Compétences' },
+  { href: '#experience', label: 'Expérience' },
   { href: '#contact', label: 'Contact' },
 ]
 

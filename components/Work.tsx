@@ -43,8 +43,8 @@ export default function Work() {
   return (
     <section className="work section" id="work">
       <h2 className="section__title">
-        View My <span>Projects</span>
-      </h2>
+  Mes <span>Projets</span>
+</h2>
 
       <div className="work__container container">
         <Swiper

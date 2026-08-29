@@ -18,6 +18,15 @@ export default function Header() {
 
   const closeMenu = () => setMenuOpen(false);
 
+  const navItems = [
+  { href: 'home', label: 'Accueil' },
+  { href: 'about', label: 'À propos' },
+  { href: 'work', label: 'Projets' },
+  { href: 'services', label: 'Services' },
+  { href: 'skills', label: 'Compétences' },
+  { href: 'experience', label: 'Expérience' },
+]
+
   return (
     <header className={`header ${scrolled ? 'scroll-header' : ''}`} id="header">
       <nav className="nav container">
@@ -30,15 +39,15 @@ export default function Header() {
           id="nav-menu"
         >
           <ul className="nav__list">
-            {['home', 'about', 'work', 'services', 'skills', 'experience'].map(
+            {navItems.map(
               (item) => (
-                <li key={item}>
+                <li key={item.href}>
                   <a
-                    href={`#${item}`}
+                    href={`#${item.href}`}
                     className="nav__link"
                     onClick={closeMenu}
                   >
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                    {item.label}
                   </a>
                 </li>
               )
@@ -54,9 +63,7 @@ export default function Header() {
           </button>
         </div>
 
-        <a href="#contact" className="nav__contact" onClick={closeMenu}>
-          Contact me
-        </a>
+        <a href="#contact" className="nav__contact" onClick={closeMenu}>Me contacter</a>
 
         <button
           className="nav__toggle"

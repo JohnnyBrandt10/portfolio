@@ -76,8 +76,8 @@ export default function Contact() {
   return (
     <section className="contact section" id="contact">
       <h2 className="section__title">
-        Contact <span>Me</span>
-      </h2>
+  Me <span>Contacter</span>
+</h2>
 
       <div className="contact__container container grid">
         {/* Formulaire */}
@@ -119,7 +119,7 @@ export default function Contact() {
               'Envoi en cours...'
             ) : (
               <>
-                Send Message <i className="ri-send-plane-line"></i>
+                Envoyer <i className="ri-send-plane-line"></i>
               </>
             )}
           </button>

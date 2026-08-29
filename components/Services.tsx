@@ -42,8 +42,8 @@ export default function Services() {
   return (
     <section className="services section" id="services">
       <h2 className="section__title">
-        My <span>Services</span>
-      </h2>
+  Mes <span>Services</span>
+</h2>
 
       <div className="services__container container">
         {services.map((service) => (

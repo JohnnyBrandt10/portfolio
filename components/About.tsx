@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 const stats = [
   { number: 7, suffix: '+', label: 'Projets réalisés' },
-  { number: 1, suffix: '', label: 'Stage pro' },
+  { number: 1, suffix: '', label: 'Stage professionnel' },
   { number: 6, suffix: '+', label: 'Technologies' },
 ]
 
@@ -56,9 +56,9 @@ export default function About() {
       <div className="about__container container grid">
 
         <div className="about__data">
-          <h2 className="section__title section__title--left">
-            About <span>Me</span>
-          </h2>
+         <h2 className="section__title" style={{ textAlign: 'left' }}>
+  À <span>Propos</span>
+</h2>
           <p className="about__description">
             Étudiant en Licence 3 en Informatique Statistique et Intelligence
             Artificielle, passionné par le développement web et les systèmes backend.
@@ -76,9 +76,9 @@ export default function About() {
             ))}
           </div>
 
-          <a href="#contact" className="button">
-            Work with me <i className="ri-arrow-right-line"></i>
-          </a>
+         <a href="#contact" className="button">
+  Travaillons ensemble <i className="ri-arrow-right-line"></i>
+</a>
         </div>
 
         <div className="about__img-wrapper">

@@ -40,8 +40,8 @@ export default function Experience() {
   return (
     <section className="experience section" id="experience">
       <h2 className="section__title">
-        My <span>Experience</span>
-      </h2>
+  Mon <span>Parcours</span>
+</h2>
 
       <div className="experience__container container">
         {experiences.map((exp) => (
